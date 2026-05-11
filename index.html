@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>명언 생성기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@500;600&family=Nanum+Myeongjo:wght@400;700&family=Outfit:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <main class="layout">
+      <article class="surface" aria-live="polite">
+        <figure class="surface__media">
+          <img
+            id="quote-image"
+            class="surface__img"
+            src=""
+            alt=""
+            width="800"
+            height="500"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+        <div class="surface__inner">
+          <header class="surface__eyebrow">오늘의 한 줄</header>
+          <blockquote class="surface__quote">
+            <p id="quote-text" class="surface__text surface__text--primary">
+              버튼을 눌러 오늘의 명언을 만나보세요.
+            </p>
+            <div class="surface__divider" aria-hidden="true"></div>
+            <div id="original-block" class="surface__original-block">
+              <p id="quote-original" class="surface__text surface__text--original"></p>
+            </div>
+            <p id="figure-meta" class="surface__figure"></p>
+          </blockquote>
+          <div class="surface__actions">
+            <button type="button" id="share-btn" class="btn btn--secondary">copy</button>
+            <button type="button" id="generate-btn" class="btn btn--primary">new wisdom</button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
