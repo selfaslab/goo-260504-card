@@ -2,7 +2,8 @@
 # 명언 생성기
 
 한국어로 된 명언과 인물 소개를 카드 형태로 보여 주는 작은 웹 앱입니다. 
-로컬에 저장된 명언**으로도 동작하고, OpenAI API를 쓰면 매번 새로운 명언을 생성할 수 있습니다.
+
+로컬에 저장된 명언으로도 동작하고, OpenAI API를 쓰면 매번 새로운 명언을 생성할 수 있습니다.
 
 <img width="699" height="903" alt="card1" src="https://github.com/user-attachments/assets/bb583e00-441d-459f-819f-cc222f1684db" />
 
